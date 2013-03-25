@@ -1,0 +1,501 @@
+2013/03/14 00:46:51 [error] [php] mail(): Failed to connect to mailserver at &quot;relais.videotron.ca&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php:67)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php?r=site/contact
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php (67)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php (13)
+2013/03/14 00:56:24 [error] [php] copy(C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\assets\56fddf42\js\ckeditor\lang\gu.js): failed to open stream: Invalid argument (C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\utils\CFileHelper.php:131)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\utils\CFileHelper.php(136): copyDirectoryRecursive()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\utils\CFileHelper.php(136): copyDirectoryRecursive()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\utils\CFileHelper.php(63): copyDirectoryRecursive()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CAssetManager.php(251): copyDirectory()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\extensions\bootstrap\components\Bootstrap.php(458): CAssetManager->publish()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\extensions\bootstrap\components\Bootstrap.php(163): Bootstrap->getAssetsUrl()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\extensions\bootstrap\components\Bootstrap.php(124): Bootstrap->registerAssetCss()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\extensions\bootstrap\components\Bootstrap.php(102): Bootstrap->registerCoreCss()
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CModule.php(387): Bootstrap->init()
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CModule.php(523): CWebApplication->getComponent()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(152): CWebApplication->preloadComponents()
+#11 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\YiiBase.php(125): CWebApplication->__construct()
+#12 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\YiiBase.php(98): createApplication()
+#13 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): createWebApplication()
+REQUEST_URI=/prgWebIsmael/index.php?r=site/captcha&refresh=1&_=1363218984122
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\extensions\bootstrap\components\Bootstrap.php (458)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\extensions\bootstrap\components\Bootstrap.php (163)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\extensions\bootstrap\components\Bootstrap.php (124)
+2013/03/14 00:56:49 [error] [php] mail(): Failed to connect to mailserver at &quot;relais.videotron.ca&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php:67)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php?r=site/contact
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php (67)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php (13)
+2013/03/14 00:59:14 [error] [php] mail(): Failed to connect to mailserver at &quot;relais.videotron.ca&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php:67)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php?r=site/contact
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php (67)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php (13)
+2013/03/14 00:59:56 [error] [php] mail(): Failed to connect to mailserver at &quot;relais.videotron.ca&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php:67)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php?r=site/contact
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php (67)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php (13)
+2013/03/14 01:00:46 [error] [php] mail(): Failed to connect to mailserver at &quot;relais.videotron.ca&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php:67)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php?r=site/contact
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php (67)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php (13)
+2013/03/14 01:03:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Gii".' in C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('Gii')
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/prgWebIsmael/index.php?r=Gii
+---
+2013/03/15 02:49:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/prgWebIsmael/index.php?r=site/admin
+HTTP_REFERER=http://127.0.0.1:8080/prgWebIsmael/index.php
+---
+2013/03/15 02:49:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/prgWebIsmael/index.php?r=site/admin
+HTTP_REFERER=http://127.0.0.1:8080/prgWebIsmael/index.php?r=site/admin
+---
+2013/03/15 02:49:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/prgWebIsmael/index.php?r=site/admin
+HTTP_REFERER=http://127.0.0.1:8080/prgWebIsmael/index.php?r=site/admin
+---
+2013/03/15 02:52:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/prgWebIsmael/index.php?r=site/admin
+HTTP_REFERER=http://127.0.0.1:8080/prgWebIsmael/index.php?r=site/index
+---
+2013/03/15 04:21:18 [error] [php] Undefined variable: model (C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\views\site\_form_feature.php:15)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\views\site\admin.php(22): SiteController->renderPartial()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CBaseController.php(126): require()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php(112): SiteController->render()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionAdmin()
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php?r=site/admin
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\views\site\_form_feature.php (15)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\views\site\admin.php (22)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php (112)
+2013/03/15 04:26:52 [error] [php] include(Feature.php): failed to open stream: No such file or directory (C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\YiiBase.php:421)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php(112): spl_autoload_call()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionAdmin()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php?r=site/admin
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php (112)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php (13)
+2013/03/15 04:28:56 [error] [php] include(Feature.php): failed to open stream: No such file or directory (C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\YiiBase.php:421)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php(112): spl_autoload_call()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionAdmin()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php?r=site/admin
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php (112)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php (13)
+2013/03/15 04:29:45 [error] [php] include(Feature.php): failed to open stream: No such file or directory (C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\YiiBase.php:421)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php(112): spl_autoload_call()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionAdmin()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php?r=site/admin
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php (112)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php (13)
+2013/03/15 04:30:24 [error] [php] include(Feature.php): failed to open stream: No such file or directory (C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\YiiBase.php:421)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php(112): spl_autoload_call()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionAdmin()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php?r=site/admin
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php (112)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php (13)
+2013/03/15 04:31:17 [error] [php] include(Feature.php): failed to open stream: No such file or directory (C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\YiiBase.php:421)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php(112): spl_autoload_call()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionAdmin()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php?r=site/admin
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php (112)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php (13)
+2013/03/15 04:33:47 [error] [php] Undefined variable: feature (C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\views\site\_form_feature.php:15)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\views\site\admin.php(22): SiteController->renderPartial()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CBaseController.php(126): require()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php(113): SiteController->render()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionAdmin()
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php?r=site/admin
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\views\site\_form_feature.php (15)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\views\site\admin.php (22)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php (113)
+2013/03/20 02:10:10 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "addFeature".' in C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(782): CController->renderPartial('addFeature', NULL, true)
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php(121): CController->render('addFeature')
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionAdmin()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): CController->run('admin')
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/prgWebIsmael/index.php?r=site/admin
+HTTP_REFERER=http://127.0.0.1:8080/prgWebIsmael/index.php?r=site/admin
+---
+2013/03/20 02:11:03 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "addFeature".' in C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(782): CController->renderPartial('addFeature', NULL, true)
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php(121): CController->render('addFeature')
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionAdmin()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): CController->run('admin')
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/prgWebIsmael/index.php?r=site/admin
+HTTP_REFERER=http://127.0.0.1:8080/prgWebIsmael/index.php?r=site/admin
+---
+2013/03/20 02:11:26 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "addFeature".' in C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(782): CController->renderPartial('addFeature', NULL, true)
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php(121): CController->render('addFeature')
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionAdmin()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): CController->run('admin')
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/prgWebIsmael/index.php?r=site/admin
+HTTP_REFERER=http://127.0.0.1:8080/prgWebIsmael/index.php?r=site/admin
+---
+2013/03/20 02:17:35 [error] [php] Undefined variable: feature (C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\views\site\admin.php:24)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php(121): SiteController->render()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionAdmin()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php?r=site/admin
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\views\site\admin.php (24)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php (121)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php (13)
+2013/03/20 02:32:46 [error] [exception.CException] exception 'CException' with message 'CActiveDataProvider and its behaviors do not have a method or closure named "search".' in C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CComponent.php:265
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\views\site\admin.php(27): CComponent->__call('search', Array)
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\views\site\admin.php(27): CActiveDataProvider->search()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CBaseController.php(126): require('C:\Program File...')
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php(125): CController->render('admin', Array)
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionAdmin()
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): CController->run('admin')
+#12 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#13 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/prgWebIsmael/index.php/site/admin
+HTTP_REFERER=http://127.0.0.1:8080/prgWebIsmael/index.php/site/admin
+---
+2013/03/22 01:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(270): CController->missingAction('update')
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): CController->run('update')
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('site/update')
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/prgWebIsmael/index.php/site/update/4
+HTTP_REFERER=http://127.0.0.1:8080/prgWebIsmael/index.php/site/admin
+---
+2013/03/22 01:21:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(270): CController->missingAction('update')
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): CController->run('update')
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('site/update')
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/prgWebIsmael/index.php/site/update/5
+HTTP_REFERER=http://127.0.0.1:8080/prgWebIsmael/index.php/site/admin
+---
+2013/03/22 01:23:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(270): CController->missingAction('update')
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): CController->run('update')
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('site/update')
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/prgWebIsmael/index.php/site/update/5
+HTTP_REFERER=http://127.0.0.1:8080/prgWebIsmael/index.php/site/admin
+---
+2013/03/22 01:25:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(270): CController->missingAction('update')
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): CController->run('update')
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('site/update')
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/prgWebIsmael/index.php/site/update/1
+HTTP_REFERER=http://127.0.0.1:8080/prgWebIsmael/index.php/site/admin
+---
+2013/03/22 01:34:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(270): CController->missingAction('update')
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): CController->run('update')
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('site/update')
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/prgWebIsmael/index.php/site/update/1
+HTTP_REFERER=http://127.0.0.1:8080/prgWebIsmael/index.php/site/admin
+---
+2013/03/22 01:35:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(270): CController->missingAction('update')
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): CController->run('update')
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('site/update')
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/prgWebIsmael/index.php/site/update/1
+HTTP_REFERER=http://127.0.0.1:8080/prgWebIsmael/index.php/site/admin
+---
+2013/03/22 01:35:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(270): CController->missingAction('update')
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): CController->run('update')
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('site/update')
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/prgWebIsmael/index.php/site/update/1
+HTTP_REFERER=http://127.0.0.1:8080/prgWebIsmael/index.php/site/admin
+---
+2013/03/22 01:44:41 [error] [php] Undefined variable: dataProvider (C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CComponent.php(606) : eval()'d code:1)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\zii\widgets\grid\CButtonColumn.php(295): CButtonColumn->renderButton()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\zii\widgets\grid\CGridColumn.php(144): CButtonColumn->renderDataCellContent()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\zii\widgets\grid\CGridView.php(589): CButtonColumn->renderDataCell()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\zii\widgets\grid\CGridView.php(545): CGridView->renderTableRow()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\zii\widgets\grid\CGridView.php(455): CGridView->renderTableBody()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\zii\widgets\CBaseListView.php(160): CGridView->renderItems()
+#6 unknown(0): CGridView->renderSection()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback()
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\zii\widgets\CBaseListView.php(128): CGridView->renderContent()
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CBaseController.php(173): CGridView->run()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\views\site\admin.php(41): SiteController->widget()
+#11 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CBaseController.php(126): require()
+#12 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#13 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(869): SiteController->renderFile()
+#14 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(782): SiteController->renderPartial()
+#15 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php(126): SiteController->render()
+#16 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\actions\CInlineAction.php(49): SiteController->actionAdmin()
+#17 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#19 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#20 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#21 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php/site/admin
+2013/03/22 01:56:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "modify".' in C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(270): CController->missingAction('modify')
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): CController->run('modify')
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('site/modify')
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/prgWebIsmael/index.php/site/modify?id=1
+HTTP_REFERER=http://127.0.0.1:8080/prgWebIsmael/index.php/site/admin
+---
+2013/03/22 02:37:46 [error] [php] Undefined index: Feature (C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php:118)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php/site/admin
+2013/03/22 02:38:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(270): CController->missingAction('update')
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): CController->run('update')
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController('site/update')
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/prgWebIsmael/index.php/site/update/1
+HTTP_REFERER=http://127.0.0.1:8080/prgWebIsmael/index.php/site/admin
+---
+2013/03/22 02:38:32 [error] [php] Undefined index: Feature (C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php:118)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php/site/admin
+2013/03/22 02:40:18 [error] [php] Undefined index: Feature (C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php:118)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php/site/admin
+2013/03/22 02:50:17 [error] [php] Undefined index: id (C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php:128)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php/site/admin
+2013/03/22 02:56:56 [error] [php] Creating default object from empty value (C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\protected\controllers\SiteController.php:127)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\yii-1.1.13\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prgWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prgWebIsmael/index.php/site/admin
