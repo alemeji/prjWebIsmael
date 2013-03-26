@@ -112,10 +112,9 @@ class SiteController extends Controller
             $feature = new Feature();
             $category = new Category();
             
-            $this->performAjaxValidation($feature);
-            
-            if(isset($_POST['Feature']))
-            {
+            //Feature
+            if(isset($_POST['Feature'])){
+                $this->performAjaxValidation($feature);
                 if(empty($_POST['Feature']['id'])){
                     $feature->attributes=$_POST['Feature'];
                     if($feature->save()){
@@ -129,8 +128,6 @@ class SiteController extends Controller
                     echo "modif";
                     $feature=Feature::model()->findByPk($_POST['Feature']['id']);
                     $feature->attributes=$_POST['Feature'];
-                    //$feature->id = $_POST['Feature']['id'];
-                    //$feature->name = $_POST['Feature']['name'];
                     if($feature->save()){
                         $feature->id = '';
                         $feature->name = '';    
@@ -138,11 +135,19 @@ class SiteController extends Controller
                 }
             }
             
+            //Category
+            if(isset($_POST['Category'])){
+                $this->performAjaxValidation($category);
+                $category->attributes= $_POST['Category'];
+                if($category->save()){
+                  $this->redirect('/prgWebIsmael/index.php/site/admin');
+                }
+            }
+            
             $this->render('admin', array('feature'=>$feature, 'category'=>$category));
         }
         
         public function actionModify(){
-            
             $feature = new Feature();
             if (isset($_POST['id'])){
                 $id = $_POST['id'];
@@ -162,7 +167,7 @@ class SiteController extends Controller
         
         protected function performAjaxValidation($model)
         {
-            if(isset($_POST['ajax']) && $_POST['ajax']==='form-feature')
+            if(isset($_POST['ajax']) && $_POST['ajax']==='form-'.$model->tableName())
             {
                 echo CActiveForm::validate($model);
                 Yii::app()->end();

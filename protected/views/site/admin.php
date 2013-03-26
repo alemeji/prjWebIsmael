@@ -33,11 +33,11 @@ $this->breadcrumbs=array(
                     'buttons'=> array(
                         'update'=>array(
                             'label'=>'modify',
-                            'url'=>'"javascript:modify(\"".$data->id."\");"',
+                            'url'=>'"javascript:modifyFeature(\"".$data->id."\");"',
                         ),
                         'Delete'=>array(
                             'label'=>'delete',
-                            'url'=>'"javascript:del(\"".$data->id."\");"',
+                            'url'=>'"javascript:delFeature(\"".$data->id."\");"',
                         ),
                     ),
                 ),
@@ -49,6 +49,7 @@ $this->breadcrumbs=array(
     <h4>Categories</h4>
     <?php
         $this->renderPartial('_form_category', array('category'=>$category));
+        $dataProvider=new CActiveDataProvider('Category');
     ?>
     </div>    
     <div id="pane3" class="tab-pane">
@@ -60,7 +61,7 @@ $this->breadcrumbs=array(
 
 <script>
     
-    function modify(id){
+    function modifyFeature(id){
         
         $.ajax({
             type:'POST',
@@ -79,9 +80,8 @@ $this->breadcrumbs=array(
         
     }
     
-    function del(id){
-        
-        $.ajax({
+    function delFeature(id){
+         $.ajax({
             type:'POST',
             url:'<?php echo Yii::app()->createUrl('/site/delete'); ?>',
             data:{'id':id},
