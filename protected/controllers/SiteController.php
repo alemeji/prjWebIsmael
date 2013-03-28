@@ -121,8 +121,8 @@ class SiteController extends Controller
                         echo "nuevo";
                         $feature->id;
                         $feature->name;
-                        $this->redirect('/prgWebIsmael/index.php/site/admin');
-                        //$this->render('admin', array('feature'=>$feature));
+                        //$this->redirect('/index.php/site/admin');
+                        $this->render('admin', array('feature'=>$feature, 'category'=>$category),true);
                     }
                 }else{
                     echo "modif";
@@ -139,8 +139,10 @@ class SiteController extends Controller
             if(isset($_POST['Category'])){
                 $this->performAjaxValidation($category);
                 $category->attributes= $_POST['Category'];
+                echo $_POST['Category'];
                 if($category->save()){
-                  $this->redirect('/prgWebIsmael/index.php/site/admin');
+                  //$this->redirect('/index.php/site/admin');
+                  $this->render('admin', array('feature'=>$feature, 'category'=>$category),true);
                 }
             }
             

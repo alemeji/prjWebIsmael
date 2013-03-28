@@ -613,3 +613,260 @@ Stack trace:
 REQUEST_URI=/prjWebIsmael/index.php/site/admin
 HTTP_REFERER=http://localhost:8080/prjWebIsmael/index.php/site/admin
 ---
+2013/03/27 03:17:34 [error] [php] Undefined variable: category (C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\site\admin.php:51)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\SiteController.php(125): SiteController->render()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): SiteController->actionAdmin()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prjWebIsmael/index.php/site/admin
+2013/03/27 04:03:52 [error] [php] Undefined variable: parent (C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\site\_form_category.php:33)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\site\admin.php(51): SiteController->renderPartial()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(126): require()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\SiteController.php(144): SiteController->render()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): SiteController->actionAdmin()
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prjWebIsmael/index.php/site/admin
+2013/03/27 04:16:45 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'c3' pour la clef 'name'. The SQL statement executed was: INSERT INTO `category` (`name`) VALUES (:yp0).
+2013/03/27 04:16:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'c3' pour la clef 'name'' in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\SiteController.php(142): CActiveRecord->save()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): SiteController->actionAdmin()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/prjWebIsmael/index.php/site/admin
+HTTP_REFERER=http://localhost:8080/prjWebIsmael/index.php/site/admin
+---
+2013/03/27 04:51:18 [error] [php] Undefined variable: dataProvider (C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\site\admin.php:26)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\SiteController.php(148): SiteController->render()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): SiteController->actionAdmin()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prjWebIsmael/index.php/site/admin
+2013/03/28 20:51:22 [error] [php] Array to string conversion (C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php:46)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prjWebIsmael/index.php/admin/admin
+2013/03/28 20:52:08 [error] [php] Array to string conversion (C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php:46)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prjWebIsmael/index.php/admin/admin
+2013/03/28 20:56:09 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "admin/admin".' in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(782): CController->renderPartial('admin/admin', Array, true)
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(53): CController->render('admin/admin', Array)
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionAdmin()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CController->run('admin')
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/admin')
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/prjWebIsmael/index.php/admin/admin
+HTTP_REFERER=http://localhost:8080/prjWebIsmael/index.php/site/index
+---
+2013/03/28 20:56:53 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "admin/admin".' in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(782): CController->renderPartial('admin/admin', Array, true)
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(29): CController->render('admin/admin', Array, true)
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionAdmin()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CController->run('admin')
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/admin')
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/prjWebIsmael/index.php/admin/admin
+HTTP_REFERER=http://localhost:8080/prjWebIsmael/index.php/admin/admin
+---
+2013/03/28 21:04:22 [error] [php] Array to string conversion (C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php:46)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prjWebIsmael/index.php/admin/admin
+2013/03/28 21:05:23 [error] [php] Array to string conversion (C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php:46)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prjWebIsmael/index.php/admin/admin
+2013/03/28 21:06:51 [error] [php] Array to string conversion (C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php:46)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prjWebIsmael/index.php/admin/admin
+2013/03/28 21:08:14 [error] [php] Array to string conversion (C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php:46)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prjWebIsmael/index.php/admin/admin
+2013/03/28 21:09:34 [error] [php] Array to string conversion (C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php:46)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prjWebIsmael/index.php/admin/admin
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (46)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php (13)
+2013/03/28 21:12:17 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'c7' pour la clef 'name'. The SQL statement executed was: INSERT INTO `category` (`name`) VALUES (:yp0).
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (47)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php (13)
+2013/03/28 21:12:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'c7' pour la clef 'name'. The SQL statement executed was: INSERT INTO `category` (`name`) VALUES (:yp0)' in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(47): CActiveRecord->save()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionAdmin()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/admin')
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/prjWebIsmael/index.php/admin/admin
+HTTP_REFERER=http://localhost:8080/prjWebIsmael/index.php/admin/admin
+---
+2013/03/28 21:12:52 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'c7' pour la clef 'name'. The SQL statement executed was: INSERT INTO `category` (`name`) VALUES (:yp0).
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (47)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php (13)
+2013/03/28 21:12:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'c7' pour la clef 'name'. The SQL statement executed was: INSERT INTO `category` (`name`) VALUES (:yp0)' in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(47): CActiveRecord->save()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionAdmin()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/admin')
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/prjWebIsmael/index.php/admin/admin
+HTTP_REFERER=http://localhost:8080/prjWebIsmael/index.php/admin/admin
+---
+2013/03/28 21:14:22 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "admin/#pane2".' in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(782): CController->renderPartial('admin/#pane2', Array, true)
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(49): CController->render('admin/#pane2', Array, true)
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionAdmin()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CController->run('admin')
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/admin')
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/prjWebIsmael/index.php/admin/admin
+HTTP_REFERER=http://localhost:8080/prjWebIsmael/index.php/admin/admin
+---
+2013/03/28 21:23:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'c2' pour la clef 'name'. The SQL statement executed was: INSERT INTO `category` (`name`) VALUES (:yp0).
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (46)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php (13)
+2013/03/28 21:23:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'c2' pour la clef 'name'. The SQL statement executed was: INSERT INTO `category` (`name`) VALUES (:yp0)' in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(46): CActiveRecord->save()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionAdmin()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/admin')
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/prjWebIsmael/index.php/admin/admin
+HTTP_REFERER=http://localhost:8080/prjWebIsmael/index.php/admin/admin
+---
+2013/03/28 21:26:34 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'c3' pour la clef 'name'. The SQL statement executed was: INSERT INTO `category` (`name`, `parent`) VALUES (:yp0, :yp1).
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (46)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php (13)
+2013/03/28 21:26:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'c3' pour la clef 'name'. The SQL statement executed was: INSERT INTO `category` (`name`, `parent`) VALUES (:yp0, :yp1)' in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(46): CActiveRecord->save()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionAdmin()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/admin')
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/prjWebIsmael/index.php/admin/admin
+HTTP_REFERER=http://localhost:8080/prjWebIsmael/index.php/admin/admin
+---
