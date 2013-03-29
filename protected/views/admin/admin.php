@@ -66,6 +66,20 @@ $this->breadcrumbs=array(
 
 <script>
     
+    $(document).ready(function(){
+        
+        $("#lblParent").hide();
+        $("#subcategorys").hide();
+        $("#chkParent").click(function(){
+            if ($('#chkParent').is(':checked')) {
+                $("#subcategorys").show();
+            } else {
+                $("#subcategorys").hide();
+            } 
+        });
+        
+    });
+    
     function modifyFeature(id){
         
         $.ajax({

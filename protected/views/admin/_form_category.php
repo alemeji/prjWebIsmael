@@ -25,20 +25,23 @@
         <?php echo $form->textField($category,'name'); ?>
         <?php echo $form->error($category,'name'); ?>
     </div>
-    
+    <div class="row">
+        <?php echo "Parent ?"; ?>
+        <?php echo CHtml::checkBox('chkParent',false); ?>
+    </div>
     <?php 
     
     ?>
     <div class="row">
-    <?php 
-   
-    $models = Category::model()->findAll( array('order' => 'name'));
-    $list = CHtml::listData($models, 'id', 'name');  
-    $parent = "";
-    echo CHtml::dropDownList('subcategorys', $parent, 
-              $list,
-              array('empty' => '(Select parent category)'));
-    ?>
+        <?php 
+            //echo CHtml::Label('Parent','',array('id'=>'lblParent'));
+            $models = Category::model()->findAll( array('order' => 'name'));
+            $list = CHtml::listData($models, 'id', 'name');  
+            $parent = "";
+            echo CHtml::dropDownList('subcategorys', $parent, 
+                      $list,
+                      array('empty' => '(Select parent category)'));
+        ?>
     </div>
    
     <div class="row">
