@@ -20,7 +20,7 @@
     <?php echo $form->errorSummary($feature); ?>
     
     <div class="row">
-        <?php echo $form->textField($feature,'id'); ?>
+        <?php echo $form->hiddenField($feature,'id'); ?>
         <?php echo $form->error($feature,'id'); ?>
     </div>
     
