@@ -870,3 +870,11 @@ Stack trace:
 REQUEST_URI=/prjWebIsmael/index.php/admin/admin
 HTTP_REFERER=http://localhost:8080/prjWebIsmael/index.php/admin/admin
 ---
+2013/03/28 22:15:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "r=gii".' in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController('r=gii')
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/prjWebIsmael/r=gii
+---
