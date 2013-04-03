@@ -46,7 +46,7 @@
    
     <div class="row">
         <?php echo $form->labelEx($category,'parent'); ?>
-        <?php echo $form->textField($category,'parent'); ?>
+        <?php echo $form->textField($category,'parent',array('disabled'=>true)); ?>
         <?php echo $form->error($category,'parent'); ?>
     </div>
 

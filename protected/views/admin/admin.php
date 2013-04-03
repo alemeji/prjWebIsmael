@@ -1,5 +1,11 @@
 <?php
 
+$bandPanel=0;
+if(isset($_GET['bandPanel'])){
+    $bandPanel = $_GET['bandPanel'];
+    //print_r($bandPanel); die();
+}
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -8,16 +14,15 @@ $this->pageTitle=Yii::app()->name . ' - Administration';
 $this->breadcrumbs=array(
 	'Administration',
 );
+
 ?>
 <div class="tabbable">
     <ul class="nav nav-tabs">
-      <li class="active"><a href="#pane1" data-toggle="tab">Features</a></li>
-      <li><a href="#pane2" data-toggle="tab">Categories</a></li>
-      <li><a href="#pane3" data-toggle="tab">Feature x Category</a></li>
-      <li><a href="#pane4" data-toggle="tab">Items</a></li>
+      <li <?php if($bandPanel == 0){ echo "class=\"active\""; } else{ echo "";} ?> ><a href="#pane1" data-toggle="tab">Features</a></li>
+      <li <?php if($bandPanel == 1){ echo "class=\"active\""; } else{ echo "";} ?>><a href="#pane2" data-toggle="tab">Categories</a></li>
     </ul>
     <div class="tab-content"> 
-    <div id="pane1" class="tab-pane active">
+    <div id="pane1" <?php if($bandPanel == 0){ echo "class=\"tab-pane active\""; } else{ echo "class=\"tab-pane inactive\""; } ?>>
       <h4>Features</h4>
       <?php
         $this->renderPartial('_form_feature', array('feature'=>$feature)); 
@@ -46,21 +51,13 @@ $this->breadcrumbs=array(
         ));
       ?>
     </div> 
-    <div id="pane2" class="tab-pane">
+    <div id="pane2" <?php if($bandPanel == 1){ echo "class=\"tab-pane active\""; } else{ echo "class=\"tab-pane inactive\""; } ?>>
     <h4>Categories</h4>
     <?php
         $this->renderPartial('_form_category', array('category'=>$category));
         $dataProvider=new CActiveDataProvider('Category');
     ?>
-    </div>    
-     <div id="pane3" class="tab-pane">
-      <h4>Feature x Category</h4>
-      <p>...</p>
-    </div>           
-    <div id="pane4" class="tab-pane">
-      <h4>Items</h4>
-      <p>...</p>
-    </div>    
+    </div>  
   </div><!-- /.tab-content -->
 </div>
 
@@ -77,7 +74,12 @@ $this->breadcrumbs=array(
                 $("#subcategorys").hide();
             } 
         });
-        
+        /*
+        $("#form-feature").submit(function() {
+            alert('Handler for .submit() called.');
+            //return false;
+        });
+     */
     });
     
     function modifyFeature(id){

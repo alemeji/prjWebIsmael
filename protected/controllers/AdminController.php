@@ -22,18 +22,17 @@ class AdminController extends Controller {
             if (empty($_POST['Feature']['id'])) {
                 $feature->attributes = $_POST['Feature'];
                 if ($feature->save()) {
-                    echo "nuevo";
-                    $feature->id;
-                    $feature->name;
-                    $this->render('admin', array('feature' => $feature, 'category' => $category), true);
+                    $bandPanel=0;
+                    //$this->redirect('admin', array('feature' => $feature, 'category' => $category));
+                    $this->redirect(array('admin', 'bandPanel'=>$bandPanel));
                 }
             } else {
                 echo "modif";
                 $feature = Feature::model()->findByPk($_POST['Feature']['id']);
                 $feature->attributes = $_POST['Feature'];
                 if ($feature->save()) {
-                    $feature->id = '';
-                    $feature->name = '';
+                    $bandPanel=0;
+                    $this->redirect(array('admin', 'bandPanel'=>$bandPanel));
                 };
             }
         }
@@ -44,7 +43,8 @@ class AdminController extends Controller {
             $category->attributes = $_POST['Category'];
             //echo $_POST['Category'];
             if ($category->save()) {
-                $this->render('admin', array('feature' => $feature, 'category' => $category), true);
+                $bandPanel=1;
+                $this->redirect(array('admin','bandPanel'=>$bandPanel));
             }
         }
 
