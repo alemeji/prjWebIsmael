@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name'=>'Administration WebIsmael',
 
 	// preloading 'log' component
 	'preload'=>array('log', 'bootstrap'),
@@ -23,7 +23,7 @@ return array(
 		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Pa$$word',
+			'password'=>'pwd',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
                         'generatorPaths' => array(
@@ -44,7 +44,7 @@ return array(
                 'responsiveCss' => true,
                 ),
 		// uncomment the following to enable URLs in path-format
-		/*
+		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
                         //'showScriptName' => false,
@@ -55,7 +55,7 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		*/
+		
                 /*
 		'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
@@ -98,5 +98,10 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'chr1st1anmart1nez@hotmail.com',
+                'tabAdminActive' =>array(
+                    'feature'=>'tab1',
+                    'category'=>'tab2',
+                    
+                                    ),
 	),
 );

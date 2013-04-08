@@ -3,7 +3,11 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
+
+$this->pageTitle=Yii::app()->name . ' - Administrator - Features';
+
 ?>
+
 <div class="form">
     <?php $form = $this->beginWidget('CActiveForm', array(
         'id'=>'form-feature',
@@ -16,7 +20,7 @@
     )); ?>
     
     <div class="row">
-        <?php echo CHtml::link('New', array('admin')); ?>
+        <?php echo CHtml::link('New', array('/admin/index')); ?>
     </div>
     
     <p class="note">Fields with <span class="required">*</span> are required.</p>

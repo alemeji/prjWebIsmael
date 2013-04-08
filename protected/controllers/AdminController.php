@@ -11,62 +11,52 @@
  * @author alemeji
  */
 class AdminController extends Controller {
-
-    public function actionAdmin() {
+    
+    public function actionIndex() {
         $feature = new Feature();
         $category = new Category();
-
-        //Feature
-        if (isset($_POST['Feature'])) {
-            $this->performAjaxValidation($feature);
-            if (empty($_POST['Feature']['id'])) {
-                $feature->attributes = $_POST['Feature'];
-                if ($feature->save()) {
-                    $bandPanel=0;
-                    //$this->redirect('admin', array('feature' => $feature, 'category' => $category));
-                    $this->redirect(array('admin', 'bandPanel'=>$bandPanel));
-                }
-            } else {
-                echo "modif";
-                $feature = Feature::model()->findByPk($_POST['Feature']['id']);
-                $feature->attributes = $_POST['Feature'];
-                if ($feature->save()) {
-                    $bandPanel=0;
-                    $this->redirect(array('admin', 'bandPanel'=>$bandPanel));
-                };
-            }
+        
+         //Feature
+        if (isset($_POST['Feature'])){
+             $this->feature($feature);
         }
-
+      
         //Category
         if (isset($_POST['Category'])) {
-            $this->performAjaxValidation($category);
-            $category->attributes = $_POST['Category'];
-            //echo $_POST['Category'];
-            if ($category->save()) {
-                $bandPanel=1;
-                $this->redirect(array('admin','bandPanel'=>$bandPanel));
+            $this->category($category);
+        }
+
+        $this->render('index', array('feature' => $feature, 'category' => $category));
+    }
+    
+    private function feature($feature){
+        //Feature
+        $tabActive = Yii::app()->params['tabAdminActive']['feature'];
+        $this->performAjaxValidation($feature);
+        if (empty($_POST['Feature']['id'])) {
+            $feature->attributes = $_POST['Feature'];
+            if ($feature->save()) {
+                $this->redirect(array('index', 'tabActive'=>$tabActive));
             }
+        } else {
+            echo "modif";
+            $feature = Feature::model()->findByPk($_POST['Feature']['id']);
+            $feature->attributes = $_POST['Feature'];
+            if ($feature->save()) {
+                $this->redirect(array('index', 'tabActive'=>$tabActive));
+            };
         }
-
-        $this->render('admin', array('feature' => $feature, 'category' => $category));
-    }
-
-    public function actionModify() {
-        $feature = new Feature();
-        if (isset($_POST['id'])) {
-            $id = $_POST['id'];
-            $feature = Feature::model()->findByPk($id);
-            echo json_encode($feature->Attributes);
-        }
-    }
-
-    public function actionDelete() {
-        $feature = new Feature();
-        if (isset($_POST['id'])) {
-            $id = $_POST['id'];
-            $feature = Feature::model()->findByPk($id);
-            $feature->delete();
-        }
+    } 
+    
+    private function category($category){
+        //Category
+        $tabActive = Yii::app()->params['tabAdminActive']['category'];
+        $this->performAjaxValidation($category);
+        $category->attributes = $_POST['Category'];
+        //echo $_POST['Category'];
+        if ($category->save()) {
+            $this->redirect(array('index','tabActive'=>$tabActive));
+        }        
     }
 
     protected function performAjaxValidation($model) {
