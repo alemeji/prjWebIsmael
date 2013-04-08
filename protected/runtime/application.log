@@ -1804,3 +1804,11 @@ in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\Ad
 in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (56)
 in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (20)
 in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php (13)
+2013/04/08 19:42:06 [warning] [application] Failed to set unsafe attribute "id" of "Feature".
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (64)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (35)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (21)
+2013/04/08 19:42:09 [warning] [application] Failed to set unsafe attribute "id" of "Feature".
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (44)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (21)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php (13)

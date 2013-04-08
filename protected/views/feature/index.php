@@ -7,11 +7,11 @@
 ?>
 
 <?php
-        $tabActive = Yii::app()->params['tabAdminActive']['feature'];
+        //$tabActive = Yii::app()->params['tabAdminActive']['feature'];
         $this->renderPartial('/feature/_form_feature', array('feature'=>$feature)); 
         $dataProvider=new CActiveDataProvider('Feature');
         $this->widget('zii.widgets.grid.CGridView', array(
-            'id'=>'grid',
+            'id'=>'grid-feature',
             'dataProvider'=>$dataProvider,
             'columns'=>array(
                 'id',          
@@ -63,7 +63,7 @@
             dataType: 'json',
             success: function(data){
                  //console.log(data);
-                 $("#grid").yiiGridView.update('grid');
+                 $("#grid-feature").yiiGridView.update('grid-feature');
             },
             error: function(data){
                 alert("mal");

@@ -35,7 +35,7 @@
     <div class="row">
         <?php 
             //echo CHtml::Label('Parent','',array('id'=>'lblParent'));
-            $models = Category::model()->findAll( array('order' => 'parent'));
+            $models = Category::model()->findAll( array('order' => 'name'));
             $list = CHtml::listData($models, 'id', 'name');  
             $parent = "";
             echo CHtml::dropDownList('subcategorys', $parent, 

@@ -18,7 +18,7 @@ $this->breadcrumbs=array(
 ?>
 
 <?php
-    echo "valor de tabActive[".$tabActive."]";
+    //echo "valor de tabActive[".$tabActive."]";
 $this->widget('CTabView',array(
     'activeTab'=>$tabActive,
     'tabs'=>array(
