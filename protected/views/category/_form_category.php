@@ -16,10 +16,19 @@
         'focus'=>array($category,'name')
     )); ?>
     
+    <div class="row">
+        <?php echo CHtml::link('New', array('/admin/index')); ?>
+    </div>
     <p class="note">Fields with <span class="required">*</span> are required.</p>
     
     <?php echo $form->errorSummary($category); ?>
-
+    
+    <div class="row">
+        <?php //echo $form->labelEx($category,'id'); ?>
+        <?php echo $form->hiddenField($category,'id'); ?>
+        <?php echo $form->error($category,'id'); ?>
+    </div>
+    
     <div class="row">
         <?php echo $form->labelEx($category,'name'); ?>
         <?php echo $form->textField($category,'name'); ?>
@@ -40,14 +49,16 @@
             $parent = "";
             echo CHtml::dropDownList('subcategorys', $parent, 
                       $list,
-                      array('empty' => '(Select parent category)'));
+                      array('empty' => '(Select parent category)',
+                            'onChange' => 'javascript:changeCategoryParent(this.value);',
+                          ));
         ?>
     </div>
    
     <div class="row">
-        <?php echo $form->labelEx($category,'parent'); ?>
-        <?php echo $form->textField($category,'parent',array('disabled'=>true)); ?>
-        <?php echo $form->error($category,'parent'); ?>
+        <?php //echo $form->labelEx($category,'parent'); ?>
+        <?php echo $form->hiddenField($category,'parent'/*,array('disabled'=>true)*/); ?>
+        <?php echo $form->error($category,'parent'); ?> 
     </div>
 
     <div class="row buttons">
@@ -56,3 +67,10 @@
     
     <?php $this->endWidget(); ?>
 </div>
+
+<script>
+    function changeCategoryParent(value){
+        document.getElementById("Category_parent").value = value;
+    }
+    
+</script>    

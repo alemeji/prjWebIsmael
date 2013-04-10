@@ -39,7 +39,7 @@ class AdminController extends Controller {
                 $this->redirect(array('index', 'tabActive'=>$tabActive));
             }
         } else {
-            echo "modif";
+            echo "modif feature";
             $feature = Feature::model()->findByPk($_POST['Feature']['id']);
             $feature->attributes = $_POST['Feature'];
             if ($feature->save()) {
@@ -52,6 +52,19 @@ class AdminController extends Controller {
         //Category
         $tabActive = Yii::app()->params['tabAdminActive']['category'];
         $this->performAjaxValidation($category);
+        if (empty($_POST['Category']['id'])){
+            $category->attributes = $_POST['Category'];
+            if($category->save()){
+                $this->redirect(array('index', 'tabActive'=>$tabActive));
+            }
+        }else{
+            echo "modif category";
+            $category = Category::model()->findByPk($_POST['Category']['id']);
+            $category->attributes = $_POST['Category'];
+            if($category->save()){
+                $this->redirect(array('index', 'tabActive'=>$tabActive));
+            }            
+        }
         $category->attributes = $_POST['Category'];
         //echo $_POST['Category'];
         if ($category->save()) {
