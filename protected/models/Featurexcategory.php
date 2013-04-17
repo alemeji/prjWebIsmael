@@ -56,6 +56,7 @@ class Featurexcategory extends CActiveRecord
                     'category'=>array(self::HAS_MANY,'Category','id'),
 		);
                 
+                
 	}
 
 	/**

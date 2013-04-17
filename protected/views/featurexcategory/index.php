@@ -51,6 +51,5 @@
     
     function delFeaturexCategory(id_feature,id_category){
         
-    } 
-    
+    }
 </script>    
