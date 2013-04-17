@@ -22,7 +22,9 @@ $this->pageTitle=Yii::app()->name . ' - Administrator - Features';
     <div class="row">
         <?php echo CHtml::link('New', array('/admin/index')); ?>
     </div>
-    
+    <div class="alert" id="alert_feature">
+        <strong>Warning!</strong> La caracteristica ya existe.
+    </div>
     <p class="note">Fields with <span class="required">*</span> are required.</p>
     
     <?php echo $form->errorSummary($feature); ?>
@@ -45,3 +47,36 @@ $this->pageTitle=Yii::app()->name . ' - Administrator - Features';
     
     <?php $this->endWidget(); ?>
 </div>
+
+<script>
+    var result = 3;
+    $("#alert_feature").hide();
+    
+    $("#form-feature").submit(function(){
+        if(result == 1){
+            return false;
+        }
+    })
+    
+    $("#Feature_name").blur(function(){
+        name = $("#Feature_name").val();
+        $.ajax({
+           type:'POST',
+           url:'<?php echo Yii::app()->createUrl('/feature/verify'); ?>',
+           data:{'name':name},
+           dataType: 'json',
+           success: function(data){
+               //console.log(data);
+               result = data;
+               if(result == 1){
+                   $("#alert_feature").show();
+               }else{
+                   $("#alert_feature").hide();
+               }
+           },
+           error: function(data){
+               //alert('error');
+           }
+       });
+    });
+</script>

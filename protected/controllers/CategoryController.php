@@ -24,12 +24,22 @@ class CategoryController extends Controller{
         }
     }
     
-    public function actionMakeTree(){
-        $result = array();
-        $category = Category::model()->findAll(array("condition"=>"parent = null"));
-        foreach($category as $cat){
-           
+    public function actionVerify(){
+        if (isset($_POST['name'])){
+            $name = $_POST['name'];
+            $category = Category::model()->findByAttributes(array('name' => $name));
+            if($category){
+                //echo "existe";
+                //$result['result'] = 1;
+                $result = 1;
+            }else{  
+                //echo "no existe";
+                //$result['result'] = 0;
+                $result = 0;
+            }
+            echo json_encode($result);
         }
     }
+    
 }
 ?>

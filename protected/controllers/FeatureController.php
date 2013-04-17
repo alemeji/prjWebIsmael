@@ -23,6 +23,23 @@ class FeatureController extends Controller {
             $feature->delete();
         }
     }
+    
+    public function actionVerify() {
+        if(isset($_POST['name'])){
+            $name = $_POST['name'];
+            $feature = Feature::model()->findByAttributes(array('name' => $name));
+            if($feature){
+                //echo "existe";
+                //$result['result'] = 1;
+                $result = 1;
+            }else{  
+                //echo "no existe";
+                //$result['result'] = 0;
+                $result = 0;
+            }
+            echo json_encode($result);
+        }
+    }
 
     // Uncomment the following methods and override them if needed
     /*
