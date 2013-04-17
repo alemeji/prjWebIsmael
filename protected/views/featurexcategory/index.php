@@ -36,7 +36,7 @@
         $.ajax({
             type:'POST',
             url:'<?php echo Yii::app()->createUrl('/Featurexcategory/modify'); ?>',
-            data:{'id':id},
+            data:{'id_feature':id,'id_category':id_category},
             dataType: 'json',
             success: function(data){
                  //console.log(data);
@@ -51,5 +51,6 @@
     
     function delFeaturexCategory(id_feature,id_category){
         
-    }
+    } 
+    
 </script>    
