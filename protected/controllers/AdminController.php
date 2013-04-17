@@ -15,6 +15,7 @@ class AdminController extends Controller {
     public function actionIndex() {
         $feature = new Feature();
         $category = new Category();
+        $featurexcategory = new Featurexcategory();
         
          //Feature
         if (isset($_POST['Feature'])){
@@ -25,8 +26,13 @@ class AdminController extends Controller {
         if (isset($_POST['Category'])) {
             $this->category($category);
         }
+        
+        //Featurexcategory
+        if(isset($_POST['Featurexcategory'])){
+            $this->featurexcategory($featurexcategory);
+        }
 
-        $this->render('index', array('feature' => $feature, 'category' => $category));
+        $this->render('index', array('feature' => $feature, 'category' => $category,'featurexcategory' =>$featurexcategory));
     }
     
     private function feature($feature){
@@ -77,6 +83,16 @@ class AdminController extends Controller {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }
+    }
+
+    public function featurexcategory($featurexcategory) {
+         $tabActive = Yii::app()->params['tabAdminActive']['featurexcategory'];
+         $this->performAjaxValidation($featurexcategory);
+         $featurexcategory->attributes = $_POST['Featurexcategory'];
+         if ($featurexcategory->save()){
+             $this->redirect(array('index', 'tabActive'=>$tabActive));
+         }
+        
     }
 
 }
