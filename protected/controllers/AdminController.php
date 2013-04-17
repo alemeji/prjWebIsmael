@@ -92,7 +92,6 @@ class AdminController extends Controller {
          if ($featurexcategory->save()){
              $this->redirect(array('index', 'tabActive'=>$tabActive));
          }
-        
     }
 
 }
