@@ -19,6 +19,9 @@
     <div class="row">
         <?php echo CHtml::link('New', array('/admin/index')); ?>
     </div>
+    <div class="alert" id="alert_category">
+        <strong>Warning!</strong> La categoria ya existe.
+    </div>
     <p class="note">Fields with <span class="required">*</span> are required.</p>
     
     <?php echo $form->errorSummary($category); ?>
@@ -69,8 +72,41 @@
 </div>
 
 <script>
+    var result = 3;
+    $("#alert_category").hide();
+    
     function changeCategoryParent(value){
         document.getElementById("Category_parent").value = value;
     }
     
+    $("#form-category").submit(function(){
+        if(result == 1){
+            return false;
+        }
+    })
+    
+    $("#Category_name").blur(function(){
+       name = $("#Category_name").val();
+       
+       $.ajax({
+           type:'POST',
+           url:'<?php echo Yii::app()->createUrl('/category/verify'); ?>',
+           data:{'name':name},
+           dataType: 'json',
+           success: function(data){
+               //console.log(data);
+               result = data;
+               if(result == 1){
+                   $("#alert_category").show();
+               }else{
+                   $("#alert_category").hide();
+               }
+               //alert(result);
+           },
+           error: function(data){
+               //alert('error');
+           }
+       });
+       
+    });  
 </script>    

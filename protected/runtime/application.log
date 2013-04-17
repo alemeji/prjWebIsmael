@@ -2153,3 +2153,103 @@ in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\admin\in
 in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (56)
 in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (26)
 in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php (13)
+2013/04/10 04:15:36 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (56)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (26)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php (13)
+2013/04/10 04:24:47 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (56)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (26)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php (13)
+2013/04/10 04:40:28 [error] [php] Invalid argument supplied for foreach() (C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\schema\CDbCommandBuilder.php:567)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): CategoryController->actionVerify()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CategoryController->runAction()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CategoryController->run()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prjWebIsmael/index.php/category/verify
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\CategoryController.php (30)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php (13)
+2013/04/10 04:40:37 [error] [php] Invalid argument supplied for foreach() (C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\schema\CDbCommandBuilder.php:567)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): CategoryController->actionVerify()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CategoryController->runAction()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CategoryController->run()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prjWebIsmael/index.php/category/verify
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\CategoryController.php (30)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php (13)
+2013/04/10 04:40:46 [error] [php] Invalid argument supplied for foreach() (C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\schema\CDbCommandBuilder.php:567)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): CategoryController->actionVerify()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CategoryController->runAction()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CategoryController->run()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prjWebIsmael/index.php/category/verify
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\CategoryController.php (30)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php (13)
+2013/04/10 04:40:46 [error] [php] Invalid argument supplied for foreach() (C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\schema\CDbCommandBuilder.php:567)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): CategoryController->actionVerify()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CategoryController->runAction()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CategoryController->run()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prjWebIsmael/index.php/category/verify
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\CategoryController.php (30)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php (13)
+2013/04/10 04:41:34 [error] [php] Invalid argument supplied for foreach() (C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\schema\CDbCommandBuilder.php:567)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): CategoryController->actionVerify()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CategoryController->runAction()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CategoryController->run()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prjWebIsmael/index.php/category/verify
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\CategoryController.php (30)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php (13)
+2013/04/12 00:00:32 [warning] [application] Failed to set unsafe attribute "id" of "Feature".
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (77)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (35)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (21)
+2013/04/12 00:00:41 [warning] [application] Failed to set unsafe attribute "id" of "Feature".
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (37)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (21)
+in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php (13)
+2013/04/12 01:05:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test' for key 'name'. The SQL statement executed was: INSERT INTO `category` (`name`, `parent`) VALUES (:yp0, :yp1).
+2013/04/12 01:05:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test' for key 'name'' in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(57): CActiveRecord->save()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(26): AdminController->category(Object(Category))
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/prjWebIsmael/index.php/admin/index?tabActive=tab2
+HTTP_REFERER=http://127.0.0.1:8080/prjWebIsmael/index.php/admin/index?tabActive=tab2
+---
