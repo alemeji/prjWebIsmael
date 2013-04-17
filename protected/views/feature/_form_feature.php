@@ -60,7 +60,6 @@ $this->pageTitle=Yii::app()->name . ' - Administrator - Features';
     
     $("#Feature_name").blur(function(){
         name = $("#Feature_name").val();
-        alert(name);
         $.ajax({
            type:'POST',
            url:'<?php echo Yii::app()->createUrl('/feature/verify'); ?>',
