@@ -16,7 +16,7 @@ $this->pageTitle=Yii::app()->name . ' - Administrator - Features';
         'clientOptions'=>array(
                     'validateOnSubmit'=>true
         ),
-        'focus'=>array($feature,'firstName')
+        'focus'=>array($feature,'name')
     )); ?>
     
     <div class="row">

@@ -31,7 +31,12 @@ $this->widget('CTabView',array(
             'title'=>'Category',
             'view'=>'/category/index',
             'data'=>array('category'=>$category),
-        ),        
+        ), 
+        'tab3'=>array(
+            'title' =>'FeatureXCategory',
+            'view' => '/featurexcategory/index',
+            'data' =>array('featurexcategory'=>$featurexcategory),
+        ),
         /*'tab3'=>array('title'=>'Url tab','url'=>Yii::app()->createUrl("site/index"),)*/
     ),
     /*'htmlOptions'=>array(

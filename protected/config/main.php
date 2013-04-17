@@ -101,6 +101,7 @@ return array(
                 'tabAdminActive' =>array(
                     'feature'=>'tab1',
                     'category'=>'tab2',
+                    'featurexcategory' => 'tab3',
                     
                                     ),
 	),
