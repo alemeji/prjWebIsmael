@@ -23,5 +23,13 @@ class CategoryController extends Controller{
             $category->delete();
         }
     }
+    
+    public function actionMakeTree(){
+        $result = array();
+        $category = Category::model()->findAll(array("condition"=>"parent = null"));
+        foreach($category as $cat){
+           
+        }
+    }
 }
 ?>
