@@ -26,7 +26,8 @@
                         ),
                         'Delete'=>array(
                             'label'=>'delete',
-                            'url'=>'"javascript:delFeature(\"".$data->id."\");"',
+                            'imageUrl'=> Yii::app()->request->baseUrl.'/assets/1f13eb77/gridview/delete.png', 
+                            'url'=>'"javascript:delFeature(\"".$data->id."\",\"".$data->name."\");"',
                         ),
                     ),
                 ),
@@ -55,21 +56,22 @@
         
     }
     
-    function delFeature(id){
-         $.ajax({
-            type:'POST',
-            url:'<?php echo Yii::app()->createUrl('/feature/delete'); ?>',
-            data:{'id':id},
-            dataType: 'json',
-            success: function(data){
-                 //console.log(data);
-                 $("#grid-feature").yiiGridView.update('grid-feature');
-            },
-            error: function(data){
-                alert("mal");
-            }
-        });
-        
+    function delFeature(id,name){
+        if (confirm('Are you sure you want to delete ' + name  + '?')) {
+           $.ajax({
+                type:'POST',
+                url:'<?php echo Yii::app()->createUrl('/feature/delete'); ?>',
+                data:{'id':id},
+                dataType: 'json',
+                success: function(data){
+                     //console.log(data);
+                     $("#grid-feature").yiiGridView.update('grid-feature');
+                },
+                error: function(data){
+                    alert("mal");
+                }
+           }); 
+        } 
     }
     
 </script>    
