@@ -20,7 +20,26 @@ class CategoryController extends Controller{
         if (isset($_POST['id'])){
             $id = $_POST['id'];
             $category = Category::model()->findByPk($id);
-            $category->delete();
+            //Es padre?
+            if ($category->parent == NULL){
+                //Es papa de otros?
+              $childrens = Category::model()->find('parent=:id',array(':id'=>$id));
+              if (count($childrens) == 0){
+                  $category->delete();
+              }             
+            }else{
+                 $childrens = Category::model()->find('parent=:id',array(':id'=>$id));
+              if (count($childrens) > 0){
+                 //No borrar
+              } else{
+                   $category->delete();
+              }
+            }
+            
+
+            /*if ($childrens == NULL){
+                 $category->delete();
+            }*/
         }
     }
     

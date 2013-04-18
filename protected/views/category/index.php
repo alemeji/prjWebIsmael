@@ -13,9 +13,9 @@
         'id'=>'grid-category',
         'dataProvider'=>$dataProvider,
         'columns'=>array(
-            'id',          
-            'name',
+            'id',
             'parent',
+            'name',
             array(
                 'class'=>'CButtonColumn',
                 'template'=>'{update}{Delete}',
@@ -74,11 +74,10 @@
         data:{'id':id},
         dataType: 'json',
         success: function(data){
-             //console.log(data);
              $("#grid-category").yiiGridView.update('grid-category');
         },
         error: function(data){
-            alert("mal");
+            //alert("Esta categoria es padre, borre todos los hijos asociados");
         }
     });
 

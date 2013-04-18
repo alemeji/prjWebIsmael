@@ -12,7 +12,7 @@
     'id'=>'grid-featurexcategory',
     'dataProvider'=>$dataProvider,
     'columns'=>array(
-        'id_feature',          
+        'id_feature',
         'id_category',
         array(
             'class'=>'CButtonColumn',

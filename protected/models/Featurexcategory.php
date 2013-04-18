@@ -6,6 +6,8 @@
  * The followings are the available columns in table 'featurexcategory':
  * @property integer $id_category
  * @property integer $id_feature
+ * @property Category[] $categories
+ * @property Feature[] $features
  */
 class Featurexcategory extends CActiveRecord
 {
@@ -52,8 +54,8 @@ class Featurexcategory extends CActiveRecord
 		// class name for the relations automatically generated below.
             
 		return array(
-                    'feature' => array(self::HAS_MANY,'Feature','id'),
-                    'category'=>array(self::HAS_MANY,'Category','id'),
+                    'features' => array(self::HAS_MANY,'Feature','id'),
+                    'categories'=>array(self::HAS_MANY,'Category','id'),
 		);
                 
                 
