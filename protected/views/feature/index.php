@@ -12,10 +12,19 @@
         $dataProvider=new CActiveDataProvider('Feature');
         $this->widget('zii.widgets.grid.CGridView', array(
             'id'=>'grid-feature',
-            'dataProvider'=>$dataProvider,
+            'dataProvider'=>$feature->search(),
+            'filter'=>$feature,
             'columns'=>array(
-                'id',          
-                'name',
+                array(
+                    'name'=>'id',
+                    'type' => 'raw',
+                    'value' => 'CHtml::encode($data->id)'
+                ),
+                array(
+                    'name'=>'name',
+                    'type' => 'raw',
+                    'value' => 'CHtml::encode($data->name)'
+                ),
                 array(
                     'class'=>'CButtonColumn',
                     'template'=>'{update}{Delete}',
@@ -57,7 +66,7 @@
     }
     
     function delFeature(id,name){
-        if (confirm('Are you sure you want to delete ' + name  + '?')) {
+        if (confirm('Are you sure you want to delete: "' + name  + '"?')) {
            $.ajax({
                 type:'POST',
                 url:'<?php echo Yii::app()->createUrl('/feature/delete'); ?>',
