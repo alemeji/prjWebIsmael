@@ -9,9 +9,10 @@
 <?php
         //$tabActive = Yii::app()->params['tabAdminActive']['feature'];
         $this->renderPartial('/feature/_form_feature', array('feature'=>$feature)); 
-        $dataProvider=new CActiveDataProvider('Feature');
+        //$dataProvider=new CActiveDataProvider('Feature');
         $this->widget('zii.widgets.grid.CGridView', array(
             'id'=>'grid-feature',
+            //'dataProvider'=>$dataProvider,
             'dataProvider'=>$feature->search(),
             'filter'=>$feature,
             'columns'=>array(

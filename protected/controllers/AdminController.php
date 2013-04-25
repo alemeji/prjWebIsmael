@@ -12,18 +12,25 @@
  */
 class AdminController extends Controller {
     
-    public function actionIndex() {
+    public function actionIndex(){
         $feature = new Feature();
         $category = new Category();
         $featurexcategory = new Featurexcategory();
+        $document = new Document();
+        
+        $feature->unsetAttributes();
+        
+        if(isset($_GET['Feature'])){
+            $feature->attributes=$_GET['Feature'];
+        }
         
          //Feature
-        if (isset($_POST['Feature'])){
-             $this->feature($feature);
+        if(isset($_POST['Feature'])){
+            $this->feature($feature);
         }
       
         //Category
-        if (isset($_POST['Category'])) {
+        if(isset($_POST['Category'])){
             $this->category($category);
         }
         
@@ -31,8 +38,12 @@ class AdminController extends Controller {
         if(isset($_POST['Featurexcategory'])){
             $this->featurexcategory($featurexcategory);
         }
+        
+        if(isset($_POST['Document'])){
+            $this->document($document);
+        }
 
-        $this->render('index', array('feature' => $feature, 'category' => $category,'featurexcategory' =>$featurexcategory));
+        $this->render('index', array('feature'=>$feature, 'category'=>$category,'featurexcategory'=>$featurexcategory,'document' =>$document));
     }
     
     private function feature($feature){
@@ -78,14 +89,14 @@ class AdminController extends Controller {
         }        
     }
 
-    protected function performAjaxValidation($model) {
+    protected function performAjaxValidation($model){
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'form-' . $model->tableName()) {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }
     }
 
-    public function featurexcategory($featurexcategory) {
+    public function featurexcategory($featurexcategory){
          $tabActive = Yii::app()->params['tabAdminActive']['featurexcategory'];
          $this->performAjaxValidation($featurexcategory);
          $featurexcategory->attributes = $_POST['Featurexcategory'];

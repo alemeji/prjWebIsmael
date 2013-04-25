@@ -2,26 +2,11 @@
 
 class FeatureController extends Controller {
 
-    public function actionIndex() {
-        $feature = new Feature('search');
-        //$feature->unsetAttributes(); // clear any default values
-        if(isset($_GET['Feature']) && isset($_GET('ajax')) ){
-             $feature->attributes = $_GET['Feature'];
-        }
-        /*
-        if(!isset($_GET['ajax'])){ 
-            $feature->attributes = $_GET['Feature'];
-            $this->render('index', array(feature=>$feature));
-        }
-        else{
-            $feature->attributes = $_GET['Feature'];
-            $this->render('index', array(feature=>$feature));
-        }
-        */
-        $this->render('index', array(feature=>$feature));
+    public function actionIndex(){
+        $this->render('index');
     }
-
-    public function actionModify() {
+    
+    public function actionModify(){
         $feature = new Feature();
         if (isset($_POST['id'])) {
             $id = $_POST['id'];
@@ -30,7 +15,7 @@ class FeatureController extends Controller {
         }
     }
 
-    public function actionDelete() {
+    public function actionDelete(){
         $feature = new Feature();
         if (isset($_POST['id'])) {
             $id = $_POST['id'];
