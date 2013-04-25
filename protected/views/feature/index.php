@@ -18,12 +18,12 @@
             'columns'=>array(
                 array(
                     'name'=>'id',
-                    'type' => 'raw',
+                    //'type' => 'raw',
                     'value' => 'CHtml::encode($data->id)'
                 ),
                 array(
                     'name'=>'name',
-                    'type' => 'raw',
+                    //'type' => 'raw',
                     'value' => 'CHtml::encode($data->name)'
                 ),
                 array(

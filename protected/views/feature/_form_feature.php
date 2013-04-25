@@ -23,7 +23,7 @@ $this->pageTitle=Yii::app()->name . ' - Administrator - Features';
         <?php echo CHtml::link('New', array('/admin/index')); ?>
     </div>
     <div class="alert alert-error" id="alert_feature">
-        <strong>Atención !!</strong> La caracteristica ya existe.
+        <strong>Atención!</strong> La caracteristica ya existe.
     </div>
     <p class="note">Fields with <span class="required">*</span> are required.</p>
     
