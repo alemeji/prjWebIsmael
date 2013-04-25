@@ -60,11 +60,13 @@ class Category extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'parent0' => array(self::BELONGS_TO, 'Category', 'parent'),
+			//'parent0' => array(self::BELONGS_TO, 'Category', 'parent'),
+                        'myParent' => array(self::BELONGS_TO, 'Category', 'parent'),
 			'categories' => array(self::HAS_MANY, 'Category', 'parent'),
 			'features' => array(self::MANY_MANY, 'Feature', 'featurexcategory(id_category, id_feature)'),
 			'items' => array(self::HAS_MANY, 'Item', 'id_category'),
 			'itemxcategoryxfeatures' => array(self::HAS_MANY, 'Itemxcategoryxfeature', 'id_category'),
+                        
 		);
 	}
 
@@ -90,29 +92,16 @@ class Category extends CActiveRecord
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
-
+                $criteria->with = 'myParent';
+                
 		$criteria->compare('id',$this->id);
 		$criteria->compare('name',$this->name,true);
-		$criteria->compare('parent',$this->parent);
+		//$criteria->compare('parent',$this->parent);
+                $criteria->compare('myParent.name',$this->parent,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
-        
-	public function searchParent()
-	{
-		// Warning: Please modify the following code to remove attributes that
-		// should not be searched.
-
-		$criteria=new CDbCriteria;
-
-		$criteria->compare('id',$this->id);
-		$criteria->compare('name',$this->name,true);
-		$criteria->compare('parent',$this->parent);
-
-		return new CActiveDataProvider($this, array(
-			'criteria'=>$criteria,
-		));
-	}        
+      
 }

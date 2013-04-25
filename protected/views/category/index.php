@@ -6,16 +6,25 @@
  */
 ?>
 <?php
+    $Cualquiercosa = "hola mundo";
     //$tabActive = Yii::app()->params['tabAdminActive']['category'];
     $this->renderPartial('/category/_form_category', array('category'=>$category));
     $dataProvider=new CActiveDataProvider('Category');
     $this->widget('zii.widgets.grid.CGridView', array(
         'id'=>'grid-category',
-        'dataProvider'=>$dataProvider,
+        //'dataProvider'=>$dataProvider,
+        'filter'=>$category,
+        'dataProvider'=>$category->search(),
+        'nullDisplay' => 'Padre',
         'columns'=>array(
-            'id',
-            'parent',
+            //'id',
+            //'parent',
             'name',
+            array(
+                'name'=>'parent',
+                'value'=> '$data->myParent!=null?$data->myParent->name:\'\'', //$data->myParent->parent!=null?'$data->myParent->parent':'';
+                'type'=>'text',
+            ),            
             array(
                 'class'=>'CButtonColumn',
                 'template'=>'{update}{Delete}',
@@ -77,10 +86,12 @@
             data:{'id':id},
             dataType: 'json',
             success: function(data){
-                alert("info data:" + data);
+                //alert("info data:" + data);
                 if (data==0){
                     $("#grid-category").yiiGridView.update('grid-category');
                 }else if(data == 1 ){
+                    //$('#alert_category').html('Ensayo');
+                    //$('#alert_category').show();
                     alert("No puede borrarse");
                 }else{
                     //

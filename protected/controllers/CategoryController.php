@@ -43,15 +43,13 @@ class CategoryController extends Controller{
                 }             
             }else{
                 //No se puede borrar
-                //echo "No se puede borrar";
                 $result = 1;
             }
          }
          echo json_encode($result);
     }
-    
+   //Buscar registros existentes en Featurexcategory  
     private function noRecordsFeaturexcategory($id){
-        //Buscar registros existentes en Featurexcategory
         $fxc = Featurexcategory::model()->find('id_category=:id',array(':id'=>$id));
         return count($fxc);
     }
