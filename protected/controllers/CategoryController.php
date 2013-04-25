@@ -17,30 +17,43 @@ class CategoryController extends Controller{
     
     public function actionDelete(){
         $category = new Category();
+        $result = 0;
         if (isset($_POST['id'])){
             $id = $_POST['id'];
-            $category = Category::model()->findByPk($id);
-            //Es padre?
-            if ($category->parent == NULL){
-                //Es papa de otros?
-              $childrens = Category::model()->find('parent=:id',array(':id'=>$id));
-              if (count($childrens) == 0){
-                  $category->delete();
-              }             
+            if ($this->noRecordsFeaturexcategory($id) == 0 ){
+                $category = Category::model()->findByPk($id);
+                //Es padre?
+                if ($category->parent == NULL){
+                    //Es papa de otros?
+                  $childrens = Category::model()->find('parent=:id',array(':id'=>$id));
+                  if (count($childrens) == 0){
+                      $category->delete();
+                      $result = 0;
+                  }             
+                }else{
+                    //Tengo hijos
+                     $childrens = Category::model()->find('parent=:id',array(':id'=>$id));
+                  if (count($childrens) > 0){
+                       //No borrar
+                       $result = 1;
+                  } else{
+                       $category->delete();
+                       $result = 0;
+                  }
+                }             
             }else{
-                 $childrens = Category::model()->find('parent=:id',array(':id'=>$id));
-              if (count($childrens) > 0){
-                 //No borrar
-              } else{
-                   $category->delete();
-              }
+                //No se puede borrar
+                //echo "No se puede borrar";
+                $result = 1;
             }
-            
-
-            /*if ($childrens == NULL){
-                 $category->delete();
-            }*/
-        }
+         }
+         echo json_encode($result);
+    }
+    
+    private function noRecordsFeaturexcategory($id){
+        //Buscar registros existentes en Featurexcategory
+        $fxc = Featurexcategory::model()->find('id_category=:id',array(':id'=>$id));
+        return count($fxc);
     }
     
     public function actionVerify(){

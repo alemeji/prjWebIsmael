@@ -12,8 +12,8 @@
     'id'=>'grid-featurexcategory',
     'dataProvider'=>$dataProvider,
     'columns'=>array(
-        'id_feature',
         'id_category',
+        'id_feature',
         array(
             'class'=>'CButtonColumn',
             'template'=>'{update}{Delete}',
@@ -24,6 +24,7 @@
                 ),
                 'Delete'=>array(
                     'label'=>'delete',
+                    'imageUrl'=> Yii::app()->request->baseUrl.'/assets/1f13eb77/gridview/delete.png', 
                     'url'=>'"javascript:delFeaturexCategory(\"".$data->id_feature."\",\"".$data->id_category."\");"',
                 ),
             ),

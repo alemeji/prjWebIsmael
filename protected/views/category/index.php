@@ -26,7 +26,8 @@
                     ),
                     'Delete'=>array(
                         'label'=>'delete',
-                        'url'=>'"javascript:delCategory(\"".$data->id."\");"',
+                        'imageUrl'=> Yii::app()->request->baseUrl.'/assets/1f13eb77/gridview/delete.png',
+                        'url'=>'"javascript:delCategory(\"".$data->id."\",\"".$data->name."\");"',
                     ),
                 ),
             ),
@@ -67,20 +68,30 @@
         
     }
     
-    function delCategory(id){
-     $.ajax({
-        type:'POST',
-        url:'<?php echo Yii::app()->createUrl('/category/delete'); ?>',
-        data:{'id':id},
-        dataType: 'json',
-        success: function(data){
-             $("#grid-category").yiiGridView.update('grid-category');
-        },
-        error: function(data){
-            //alert("Esta categoria es padre, borre todos los hijos asociados");
-        }
-    });
-
+    function delCategory(id,name){
+    
+    if (confirm('Are you sure you want to delete ' + name  + '?')){
+        $.ajax({
+            type:'POST',
+            url:'<?php echo Yii::app()->createUrl('/category/delete'); ?>',
+            data:{'id':id},
+            dataType: 'json',
+            success: function(data){
+                alert("info data:" + data);
+                if (data==0){
+                    $("#grid-category").yiiGridView.update('grid-category');
+                }else if(data == 1 ){
+                    alert("No puede borrarse");
+                }else{
+                    //
+                }
+                
+            },
+            error: function(data){
+                //alert("Esta categoria es padre, borre todos los hijos asociados");
+            }
+        }); 
+    }
     }
     
 </script>   

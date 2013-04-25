@@ -16,17 +16,20 @@
         ),
         'focus'=>array($featurexcategory,'id_feature')
     )); ?>
-    <div class="row">
-        <?php echo $form->labelEx($featurexcategory,'id_feature'); ?>
-        <?php echo $form->textField($featurexcategory,'id_feature'); ?>
-        <?php echo $form->error($featurexcategory,'id_feature'); ?>
-    </div>
+    
     
     <div class="row">
         <?php echo $form->labelEx($featurexcategory,'id_category'); ?>
         <?php echo $form->textField($featurexcategory,'id_category'); ?>
         <?php echo $form->error($featurexcategory,'id_category'); ?>
     </div>
+    
+    <div class="row">
+        <?php echo $form->labelEx($featurexcategory,'id_feature'); ?>
+        <?php echo $form->textField($featurexcategory,'id_feature'); ?>
+        <?php echo $form->error($featurexcategory,'id_feature'); ?>
+    </div>
+
 
     
     <div class="row buttons">

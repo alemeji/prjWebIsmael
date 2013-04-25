@@ -94,14 +94,8 @@
            data:{'name':name},
            dataType: 'json',
            success: function(data){
-               //console.log(data);
-               result = data;
-               if(result == 1){
-                   $("#alert_category").show();
-               }else{
-                   $("#alert_category").hide();
-               }
-               //alert(result);
+               var alert = $("#alert_category");
+               data == 1?alert.show():alert.hide();
            },
            error: function(data){
                //alert('error');
