@@ -109,6 +109,24 @@ class AdminController extends Controller {
          }
     }
     
+    	public function actionUploadDocument(){
+                $tabActive = Yii::app()->params['tabAdminActive']['document2'];
+		if(isset($_FILES['files']))
+		{
+			// delete old files
+			foreach($this->findFiles() as $filename)
+				unlink(Yii::app()->params['uploadDir'].$filename);
+
+			//upload new files
+			foreach($_FILES['files']['name'] as $key=>$filename)
+				move_uploaded_file($_FILES['files']['tmp_name'][$key],Yii::app()->params['uploadDir'].$filename);
+		}
+		$this->redirect(array('index','tabActive'=>$tabActive));
+	}
+        
+	public function findFiles(){
+		return array_diff(scandir(Yii::app()->params['uploadDir']), array('.', '..'));
+	}
 
 }
 

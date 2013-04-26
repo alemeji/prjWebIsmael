@@ -42,6 +42,11 @@ $this->widget('CTabView',array(
             'view' => '/document/index',
             'data' =>array('document'=>$document),
         ),
+        'tab5'=>array(
+            'title' =>'Document2',
+            'view' => '/document/index2',
+            'data' =>array('document'=>$document),
+        ),        
         /*'tab3'=>array('title'=>'Url tab','url'=>Yii::app()->createUrl("site/index"),)*/
     ),
     /*'htmlOptions'=>array(
