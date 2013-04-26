@@ -28,6 +28,10 @@ class AdminController extends Controller {
         if(isset($_POST['Feature'])){
             $this->feature($feature);
         }
+        
+        if(isset($_GET['Category'])){
+            $category->attributes=$_GET['Category'];
+        }        
       
         //Category
         if(isset($_POST['Category'])){

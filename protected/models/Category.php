@@ -92,10 +92,10 @@ class Category extends CActiveRecord
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
-                $criteria->with = 'myParent';
+                $criteria->with = array('myParent');
                 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('name',$this->name,true);
+		$criteria->compare('t.name',$this->name,true);
 		//$criteria->compare('parent',$this->parent);
                 $criteria->compare('myParent.name',$this->parent,true);
 

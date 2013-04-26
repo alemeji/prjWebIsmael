@@ -22,7 +22,7 @@
             'name',
             array(
                 'name'=>'parent',
-                'value'=> '$data->myParent!=null?$data->myParent->name:\'\'', //$data->myParent->parent!=null?'$data->myParent->parent':'';
+                'value'=> '$data->myParent!=null?$data->myParent->name:\'\'',
                 'type'=>'text',
             ),            
             array(
