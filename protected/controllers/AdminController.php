@@ -43,9 +43,9 @@ class AdminController extends Controller {
             $this->featurexcategory($featurexcategory);
         }
         
-        if(isset($_POST['Document'])){
+        /*if(isset($_POST['Document'])){
             $this->document($document);
-        }
+        }*/
 
         $this->render('index', array('feature'=>$feature, 'category'=>$category,'featurexcategory'=>$featurexcategory,'document' =>$document));
     }
@@ -110,7 +110,7 @@ class AdminController extends Controller {
     }
     
     	public function actionUploadDocument(){
-                $tabActive = Yii::app()->params['tabAdminActive']['document2'];
+                $tabActive = Yii::app()->params['tabAdminActive']['document'];
 		if(isset($_FILES['files']))
 		{
 			// delete old files

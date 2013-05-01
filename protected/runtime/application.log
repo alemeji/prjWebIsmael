@@ -4129,3 +4129,268 @@ REQUEST_URI=/prjWebIsmael/index.php/admin/uploadDocument
 in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (128)
 in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php (117)
 in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php (13)
+2013/05/01 02:38:53 [error] [php] scandir(upload/,upload/): The system cannot find the file specified. (code: 2) (C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php:128)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(126): require()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): AdminController->renderFile()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\document\index2.php(8): AdminController->renderPartial()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(126): require()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): AdminController->renderFile()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(214): AdminController->renderPartial()
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(146): CTabView->renderBody()
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(173): CTabView->run()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\admin\index.php(55): AdminController->widget()
+#11 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(126): require()
+#12 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#13 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): AdminController->renderFile()
+#14 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(782): AdminController->renderPartial()
+#15 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(50): AdminController->render()
+#16 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#17 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): AdminController->runAction()
+#19 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#20 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): AdminController->run()
+#21 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prjWebIsmael/index.php/admin/index
+2013/05/01 02:39:00 [error] [php] scandir(upload/,upload/): The system cannot find the file specified. (code: 2) (C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php:128)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(126): require()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): AdminController->renderFile()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\document\index2.php(8): AdminController->renderPartial()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(126): require()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): AdminController->renderFile()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(214): AdminController->renderPartial()
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(146): CTabView->renderBody()
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(173): CTabView->run()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\admin\index.php(55): AdminController->widget()
+#11 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(126): require()
+#12 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#13 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): AdminController->renderFile()
+#14 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(782): AdminController->renderPartial()
+#15 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(50): AdminController->render()
+#16 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#17 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): AdminController->runAction()
+#19 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#20 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): AdminController->run()
+#21 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prjWebIsmael/index.php/admin/index
+2013/05/01 02:39:23 [error] [php] scandir(upload/,upload/): The system cannot find the file specified. (code: 2) (C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php:128)
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(126): require()
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): AdminController->renderFile()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\document\index2.php(8): AdminController->renderPartial()
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(126): require()
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): AdminController->renderFile()
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(214): AdminController->renderPartial()
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(146): CTabView->renderBody()
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(173): CTabView->run()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\admin\index.php(55): AdminController->widget()
+#11 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(126): require()
+#12 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#13 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): AdminController->renderFile()
+#14 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(782): AdminController->renderPartial()
+#15 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(50): AdminController->render()
+#16 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#17 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): AdminController->runAction()
+#19 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#20 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): AdminController->run()
+#21 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CWebApplication->run()
+REQUEST_URI=/prjWebIsmael/index.php/admin/index
+2013/05/01 03:31:25 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "/document/index2".' in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(214): CController->renderPartial('/document/index...', Array)
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(146): CTabView->renderBody()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(173): CTabView->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\admin\index.php(50): CBaseController->widget('CTabView', Array)
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(126): require('C:\Program File...')
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(50): CController->render('index', Array)
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#15 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/prjWebIsmael/index.php/admin/index?tabActive=tab5
+HTTP_REFERER=http://localhost:8080/prjWebIsmael/index.php/admin/index
+---
+2013/05/01 03:32:04 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "/document/index2".' in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(214): CController->renderPartial('/document/index...', Array)
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(146): CTabView->renderBody()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(173): CTabView->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\admin\index.php(50): CBaseController->widget('CTabView', Array)
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(126): require('C:\Program File...')
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(50): CController->render('index', Array)
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#15 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/prjWebIsmael/index.php/admin/index?tabActive=tab5
+HTTP_REFERER=http://localhost:8080/prjWebIsmael/index.php/admin/index
+---
+2013/05/01 03:32:09 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "/document/index2".' in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(214): CController->renderPartial('/document/index...', Array)
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(146): CTabView->renderBody()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(173): CTabView->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\admin\index.php(50): CBaseController->widget('CTabView', Array)
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(126): require('C:\Program File...')
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(50): CController->render('index', Array)
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#15 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/prjWebIsmael/index.php/admin/index?tabActive=tab5
+HTTP_REFERER=http://localhost:8080/prjWebIsmael/index.php/admin/index
+---
+2013/05/01 03:33:09 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "/document/index2".' in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(214): CController->renderPartial('/document/index...', Array)
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(146): CTabView->renderBody()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(173): CTabView->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\admin\index.php(50): CBaseController->widget('CTabView', Array)
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(126): require('C:\Program File...')
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(50): CController->render('index', Array)
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#15 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/prjWebIsmael/index.php/admin/index
+HTTP_REFERER=http://localhost:8080/prjWebIsmael/index.php/admin/index?tabActive=tab5
+---
+2013/05/01 03:33:13 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "/document/index2".' in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(214): CController->renderPartial('/document/index...', Array)
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(146): CTabView->renderBody()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(173): CTabView->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\admin\index.php(50): CBaseController->widget('CTabView', Array)
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(126): require('C:\Program File...')
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(50): CController->render('index', Array)
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#15 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/prjWebIsmael/index.php/admin/index
+HTTP_REFERER=http://localhost:8080/prjWebIsmael/index.php/admin/index
+---
+2013/05/01 03:33:21 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "/document/index2".' in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(214): CController->renderPartial('/document/index...', Array)
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(146): CTabView->renderBody()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(173): CTabView->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\admin\index.php(50): CBaseController->widget('CTabView', Array)
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(126): require('C:\Program File...')
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(50): CController->render('index', Array)
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#15 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/prjWebIsmael/index.php/admin/index
+HTTP_REFERER=http://localhost:8080/prjWebIsmael/index.php/site/contact
+---
+2013/05/01 03:35:10 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "/document/index2".' in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(214): CController->renderPartial('/document/index...', Array)
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(146): CTabView->renderBody()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(173): CTabView->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\admin\index.php(50): CBaseController->widget('CTabView', Array)
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(126): require('C:\Program File...')
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(50): CController->render('index', Array)
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#15 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/prjWebIsmael/index.php/admin/index
+HTTP_REFERER=http://localhost:8080/prjWebIsmael/index.php/site/contact
+---
+2013/05/01 03:36:04 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "/document/index2".' in C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(214): CController->renderPartial('/document/index...', Array)
+#1 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\widgets\CTabView.php(146): CTabView->renderBody()
+#2 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(173): CTabView->run()
+#3 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\views\admin\index.php(50): CBaseController->widget('CTabView', Array)
+#4 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(126): require('C:\Program File...')
+#5 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', Array, true)
+#6 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', Array, true)
+#7 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\protected\controllers\AdminController.php(50): CController->render('index', Array)
+#9 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#10 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#15 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\Program Files (x86)\EasyPHP-12.1\www\prjWebIsmael\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/prjWebIsmael/index.php/admin/index
+HTTP_REFERER=http://localhost:8080/prjWebIsmael/index.php/site/contact
+---

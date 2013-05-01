@@ -103,7 +103,6 @@ return array(
                     'category'=>'tab2',
                     'featurexcategory' => 'tab3',
                     'document'=>'tab4',
-                    'document2'=>'tab5',
                     
                                     ),
                 'uploadDir' => 'upload/'

@@ -45,6 +45,7 @@ class Document extends CActiveRecord
 			array('id_type_document', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>50),
 			array('uri', 'length', 'max'=>255),
+                        array('uri', 'file', 'types'=>'jpg, gif, png'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, name, uri, id_type_document', 'safe', 'on'=>'search'),
