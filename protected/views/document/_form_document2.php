@@ -28,5 +28,6 @@ $this->widget('CMultiFileUpload',array(
 <?php foreach($this->findFiles() as $filename): ?>
 	<li><?php echo CHtml::link($filename, Yii::app()->baseUrl.'/'.Yii::app()->params['uploadDir'].$filename, array('rel'=>'external'));?></li>
 <?php endforeach; ?>
+        
 </ul>
 </div>
