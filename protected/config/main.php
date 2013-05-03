@@ -105,6 +105,7 @@ return array(
                     'document'=>'tab4',
                     
                                     ),
-                'uploadDir' => 'upload/'
+                'uploadImg' => 'uploadImg/',
+                'uploadDoc' => 'uploadDoc/'
 	),
 );
